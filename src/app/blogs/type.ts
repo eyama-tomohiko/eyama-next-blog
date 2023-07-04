@@ -1,14 +1,10 @@
 import { z } from "zod";
 
-const SrcData = z.object({
+const Image = z.object({
+  fieldId: z.literal("image"),
   url: z.string(),
   width: z.number().int(),
   height: z.number().int(),
-});
-
-const Image = z.object({
-  fieldId: z.literal("image"),
-  srcData: SrcData,
   text: z.string(),
 });
 

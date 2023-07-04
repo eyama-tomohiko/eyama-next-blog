@@ -1,6 +1,7 @@
 type Maybe<T> = T | null;
 
 type ListResponse<T> = {
+  json(): unknown;
   contents: T[];
   totalCount: number;
   offset: number;
@@ -16,11 +17,10 @@ type ItemResponse = {
 };
 
 type Image = {
-  srcData: {
-    url: string;
-    width: number;
-    height: number;
-  };
+  fieldId: "image";
+  url: string;
+  width: number;
+  height: number;
   text: string;
 };
 
