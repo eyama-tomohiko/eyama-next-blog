@@ -1,6 +1,5 @@
 import "server-only";
 import BlogList from "../components/Blog";
-import { zBlogs } from "./type";
 import { apiUrl } from "@/constants/api";
 
 export default async function Page() {
