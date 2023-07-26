@@ -1,15 +1,7 @@
-import "./../globals.css";
-
-export default function RootLayout({
+export default function BlogLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <>
-      <html lang="ja">
-        <body>{children}</body>
-      </html>
-    </>
-  );
+  return <main className="mx-2 sm:mx-4 relative">{children}</main>;
 }
