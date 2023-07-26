@@ -8,8 +8,10 @@ export default async function Page() {
   const data = await getBlogs();
   return (
     <BlogLayout>
-      <h2 className="mb-6 text-gray-400 text-xs">Blogs</h2>
-      <BlogList initialState={data} />
+      <section>
+        <h2 className="mb-6 text-gray-400 text-xs">Blogs</h2>
+        <BlogList initialState={data} />
+      </section>
     </BlogLayout>
   );
 }
